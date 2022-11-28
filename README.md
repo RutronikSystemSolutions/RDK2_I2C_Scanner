@@ -1,4 +1,4 @@
-# RutDevKit-PSoC62 I2C Scanner
+# RDK2 I2C Scanner
 
 Rutronik Development Kit Programmable System-on-Chip CY8C6245AZI-S3D72 "I2C Scanner" Application. 
 
@@ -6,11 +6,16 @@ This application is used to find all the devices connected to the I2C.
 
  <img src="images/rutdevkit_model.png" style="zoom:20%;" />
 
+## Requirements
+
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) v3.0
+
 ### Using the code example with a ModusToolbox IDE:
 
 1. Import the project: **File** > **Import...** > **General** > **Existing Projects into Workspace** > **Next**.
-2. Select the directory where **"RutDevKit-PSoC62_I2C_Scanner"** resides and click  **Finish**.
-3. Select and build the project **Project ** > **Build Project**.
+2. Select the directory where **"RDK2_I2C_Scanner"** resides and click  **Finish**.
+3. Update libraries using  a **"Library Manager"** tool.
+4. Select and build the project **Project ** > **Build Project**.
 
 ### Operation
 
@@ -20,7 +25,7 @@ The application checks all the 127 addresses every second and reports all the de
 
 ### Debugging
 
-If you successfully have imported the application, the debug configurations are already prepared to use with a the KitProg3, MiniProg4, or J-link. Open the ModusToolbox perspective and find the **Quick Panel**. Click on the desired debug launch configuration and wait until the programming completes and debug process starts.
+If you successfully have imported the application, the debug configurations are already prepared to use with a the KitProg3, MiniProg4, or J-link. Open the ModusToolbox perspective and find the **Quick Panel**. Click on the desired debug launch configuration and wait until the programming completes and debugging process starts.
 
 <img src="images/i2c_scanner_debug_start.png" style="zoom:100%;" />
 
