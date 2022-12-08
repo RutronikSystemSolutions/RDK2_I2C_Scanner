@@ -19,7 +19,7 @@ This application is used to find all the devices connected to the I2C.
 
 ### Operation
 
-The application checks all the 127 addresses every second and reports all the devices responding to the I2C Start/Stop commands through the KitProg3 UART port. The onboard Li-ION charger DIO59020 should give a response with ID:  0x6A.
+The application checks all the 127 addresses every second and reports all the devices responding to the I2C Start/Stop commands through the KitProg3 UART port. The RAB1-SENSORFUSION board was attached to the RDK2 during the test. If USB-C would be connected to the host with a power source, the on board USB-PD controller CYPD3177 would also respond with the 7-bit address: 0x08.
 
 <img src="images/i2c_scanner_debug_ouput.png" style="zoom:100%;" />
 
