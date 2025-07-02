@@ -8,7 +8,7 @@ This application is used to find all the devices connected to the I2C.
 
 ## Requirements
 
-- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v3.x** [built with **v3.0**]
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v2025.4.0** [built with **v3.0**]
 
 ## Supported toolchains (make variable 'TOOLCHAIN')
 
@@ -129,7 +129,7 @@ The application checks all the 127 addresses every second and reports all the de
 
 ### Debugging
 
-If you successfully have imported the application, the debug configurations are already prepared to use with a the KitProg3, MiniProg4, or J-link. Open the ModusToolbox perspective and find the **Quick Panel**. Click on the desired debug launch configuration and wait until the programming completes and debugging process starts.
+If you have successfully imported the application, the debug configurations are already prepared to use with the KitProg3, MiniProg4. Open the ModusToolbox perspective and find the **Quick Panel**. Click on the desired debug launch configuration and wait until the programming completes and the debugging process starts.
 
 <img src="images/i2c_scanner_debug_start.png" style="zoom:100%;" />
 
