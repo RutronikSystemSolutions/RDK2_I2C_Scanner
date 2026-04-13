@@ -2,17 +2,17 @@
 
 Rutronik Development Kit Programmable System-on-Chip CY8C6245AZI-S3D72 "I2C Scanner" Application. 
 
-This application is used to find all the devices connected to the I2C.
+This application is used to find all devices connected to the I2C bus.
 
 <img src="images/rdk2_rev1.jpg" style="zoom:80%;" />
 
 ## Requirements
 
-- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v2025.4.0** [built with **v3.0**]
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v3.7** [built with **v3.0**]
 
 ## Supported toolchains (make variable 'TOOLCHAIN')
 
-- GNU Arm&reg; Embedded Compiler v11.3.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
+- GNU Arm&reg; Embedded Compiler v14.2.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
 
 ## Using the code example
 
@@ -123,13 +123,13 @@ For a list of supported IDEs and more details, see the "Exporting to IDEs" secti
 
 ### Operation
 
-The application checks all the 127 addresses every second and reports all the devices responding to the I2C Start/Stop commands through the KitProg3 UART port. The RAB1-SENSORFUSION board was attached to the RDK2 during the test. If USB-C would be connected to the host with a power source, the on board USB-PD controller CYPD3177 would also respond with the 7-bit address: 0x08.
+The application checks all 127 addresses every second and reports on all devices that respond to the I2C Start/Stop commands via the KitProg3 UART port. The RAB1-SENSORFUSION board was attached to the RDK2 during the test. If USB-C were connected to the host with a power source, the on-board USB-PD controller, CYPD3177, would also respond with the 7-bit address 0x08.
 
 <img src="images/i2c_scanner_debug_ouput.png" style="zoom:100%;" />
 
 ### Debugging
 
-If you have successfully imported the application, the debug configurations are already prepared to use with the KitProg3, MiniProg4. Open the ModusToolbox perspective and find the **Quick Panel**. Click on the desired debug launch configuration and wait until the programming completes and the debugging process starts.
+If you have successfully imported the application, the debug configurations are already prepared to use with the KitProg3 and MiniProg4. Open the ModusToolbox perspective and find the **Quick Panel**. Click the desired debug launch configuration and wait until programming completes and debugging starts.
 
 <img src="images/i2c_scanner_debug_start.png" style="zoom:100%;" />
 
